@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width height=device-height  maximum-scale=1 user-scalable=no">
+	<meta charset="UTF-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Task3</title>
 	<style type="text/css">
 *{
@@ -9,130 +10,157 @@
 	padding:0;
 	font-family: "微软雅黑";
 	text-decoration: none;
+	color:#fff;
+}
+img{
+	border:none;
 }
 body{
-	font-size: 12px;
+	font-size: 100%;
+	color:#fff;
+}
+@media screen and (max-width: 480px){
+	body{
+		font-size: 60%;
+	}
+}
+.wrap {
 	width:100%;
 	max-width: 640px;
 	margin:0 auto;
-}
-.head-nav{
-	position:relative;
-	background-color: #22292c;
-	color:#fff;
-}
-.content{
-	height:1008px;
-	width:100%;
-	position:relative;
 	background-color: #68cdd5;
 }
+
+.head-nav{
+	width:100%;
+	background-color: #22292c;
+	position:relative;
+}
 .back{
-	line-height: 190%;
-	height:40%;
-	padding-left: 5%;
-	width: 12.9%;
-    font-size: 170%;
-    position: absolute;
-    top: 33%;
-    left: 2.5%;
-    background:url(task3Images/clip.png) no-repeat 0 0;
+	width:13.28%;
+	position:absolute;
+	top:20%;
+	left:2%;
+	font-size: 162.5%
 }
-.titles{
-	line-height: 90px;
+.back a{
+	width:100%;
+	display: inline-block;
+	position:absolute;
+	top:10%;
+	left: 30%
+}
+.back img{
+	width: 23%;
+	max-width:20px;
+}
+.head-nav h1{
+	width:100%;
+	font-weight: normal;
+	font-size: 212.5%;
 	text-align: center;
-}
-.more{
-	width: 5.7%;
-    position: absolute;
-    top: 10%;
-    right: 2.5%;
-}
-.more h1{
-	font-size: 3em;
+	padding:1.8% 0;
 }
 
+.more{
+	width:5%;
+	position: absolute;
+	top: 28%;
+	right:2%;
+}
+.more img{
+	width: 100%;
+	max-width: 37px;
+}
+.main {
+	widows: 100%;
+	position: relative;
+}
 .arrow{
-	background:url(task3Images/clip.png) no-repeat 0 -42px;
-	width:55px;
-	height:55px;
-    position:absolute;
-    top:2%;
-    left:3%;
+	width:8.5%;
+	padding-left:5.4%;
+	padding-top:1.25%;
 }
 .logo{
-	background: url(task3Images/clip.png)no-repeat 0 -113px;
-	width:183px;
-	height:75px;
-	position: absolute;
-	top:15%;
-	left:35%;
+	width: 28.2%;
+	display: block;
+	margin:0 auto;
+	padding-top: 7.8%;
 }
-.content-main{
-	position:absolute;
-	top:35%;
-	line-height: 2;
-	font-size: 2.5em;
-	color:#fff;
-	margin:0 15%;
+.main p{
+	width:70.9%;
+	font-size: 187.5%;
+	margin:0 auto;
+	padding-top: 7.5%;
 }
-.number{
-    background: url(task3Images/clip.png) no-repeat 0 -186px;
-    width:11%;
-    height: 7%;
+.content{
+	width: 100%;
+	padding-top: 7.5%;
+	position:relative;
+	background: #68cdd5;
+}
+.content p{
+/*	padding-top: 10%;*/
+	font-size: 150%;
+/*	text-align: left;*/
+}
+.contact {
+    padding-left: 20%;
     position: absolute;
-    border:1px solid #3ea7ea;
-    background-color: #3ea7ea;
-    border-radius: 50%;
-    top:75%;
-    left:20%;
+    left: 0;
+    top: 20%;
 }
-.name{
-	background: url(task3Images/clip.png) no-repeat -7px -261px;
-    width:11%;
-    height: 7%;
+.contact img{
+	width: 100%;
+	max-width: 86px;
+}
+.ptteng {
+    padding-right: 20%;
     position: absolute;
-    border:1px solid #009e96;
-    border-radius: 50%;
-    top:75%;
-    right:20%;
+    right: 0;
+    top: 20%;
 }
-.word1{
-	position: absolute;
-	padding-top: 15%;
-	top:75%;
-    left:15%;
-    color:#fff;
-    font-size: 2em;
-    font-weight: bold;
+
+.ptteng img{
+	width:100%;
+	max-width: 86px;
 }
-.word2{
-	position: absolute;
-	padding-top: 15%;
-	top:75%;
-    right:15%;
-    color:#fff;
-    font-size: 2em;	
-    font-weight: bold;
+p.word2 {
+    position: absolute;
+    top: 62%;
+    right: 17%;
+}
+p.word1 {
+    padding-top: 30%;
+    padding-left: 15%;
+    padding-bottom: 17%;
 }
 
 	</style>
 </head>
 <body>
-	<div class="head-nav">
-		<div href="" class="back">返回</div>
+  <div class="wrap">
+	 <div class="head-nav">
+		<div class="back"><img src="task3Images/return.png" alt="Return"><a href="">返回</a>
+		</div>
 		<h1 class="titles">魔镜</h1>
-		<div href="" class="more"><h1>...</h1></div>
-		
-	</div>
-	<div class="content">
-		<div class="arrow"></div>
-		<div class="logo"><img src="" alt=""></div>
-		<p class="content-main">葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以线下聚会桌游道具。</p>
-		<div class="number"></div>
-		<div class="name"></div>
+		<div href="" class="more"><img src="task3Images/more.png" alt="More">
+		</div>
+	 </div>
+	 <div class="main">
+		<img src="task3Images/back.png" alt="" class="arrow">
+		<img src="task3Images/logo.png" alt="" class="logo">
+		<p >葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以线下聚会桌游道具。</p>
+	 </div>
+	 <div class="content">
+		<div class="contact">
+			<img src="task3Images/contact.png" alt="">
+		</div>
 		<p class="word1">290560933</p>
 		<p class="word2">BJPTTENG</p>
-	</div>
+		<div class="ptteng"><img src="task3Images/ptteng.png" alt="">
+		</div>
+	  </div>
+   </div>
 </body>
 </html>
